@@ -1,0 +1,3 @@
+{{- /* Inline line illustration from assets/illustrazioni. Usage: partial "illu.html" (dict "nome" "coppia" "classe" "draw") */ -}}
+{{- $r := resources.Get (printf "illustrazioni/%s.svg" .nome) -}}
+<div class="illu {{ .classe }}" aria-hidden="true">{{ $r.Content | safeHTML }}</div>

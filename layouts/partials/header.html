@@ -1,0 +1,33 @@
+{{ $d := site.Data.landing }}
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="logo" href="{{ "/" | relURL }}"><img src="{{ "img/logo-blu.svg" | relURL }}" alt="Luisa Bruno, Medico Psicoterapeuta" width="1627" height="656"></a>
+    <nav class="nav" aria-label="Sezioni">
+      <a href="{{ "/#chi-sono" | relURL }}">Chi sono</a>
+      <a href="{{ "/#aree-competenza" | relURL }}">Aree</a>
+      <a href="{{ "/#come-lavoro" | relURL }}">Come lavoro</a>
+      <a href="{{ "/#faq" | relURL }}">FAQ</a>
+      <a href="{{ "/posts/" | relURL }}">Blog</a>
+      <a href="{{ "/#contatti" | relURL }}">Contatti</a>
+    </nav>
+    <a class="btn btn-small top-cta" href="{{ $d.prenota.href }}" data-prenota target="_blank" rel="noopener">Prenota</a>
+    <button class="burger" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <div class="wrap menu-inner">
+    <button class="menu-close" type="button" aria-label="Chiudi il menu">×</button>
+    <img class="menu-logo" src="{{ "img/logo-offwhite.svg" | relURL }}" alt="" width="1627" height="656">
+    <ul>
+      <li><a href="{{ "/#chi-sono" | relURL }}">Chi sono</a></li>
+      <li><a href="{{ "/#aree-competenza" | relURL }}">Aree di competenza</a></li>
+      <li><a href="{{ "/#come-lavoro" | relURL }}">Come lavoro</a></li>
+      <li><a href="{{ "/#specializzazioni" | relURL }}">Specializzazioni</a></li>
+      <li><a href="{{ "/#faq" | relURL }}">FAQ</a></li>
+      <li><a href="{{ "/posts/" | relURL }}">Blog</a></li>
+      <li><a href="{{ "/#contatti" | relURL }}">Contatti</a></li>
+    </ul>
+    <p class="menu-phone"><a href="{{ $d.telefono.href | safeURL }}">{{ $d.telefono.label }}</a></p>
+    <p><a class="btn btn-light" href="{{ $d.prenota.href }}" data-prenota target="_blank" rel="noopener">Prenota un appuntamento</a></p>
+  </div>
+</div>

@@ -1,0 +1,181 @@
+prenota:
+  label: Richiedi un appuntamento
+  href: https://www.miodottore.it/luisa-bruno/psicoterapeuta/montalto-dora
+telefono:
+  label: +39 327 389 9906
+  href: tel:+393273899906
+hero:
+  sopratitolo: Psicoterapeuta Sistemico-Familiare
+  titolo: Psicoterapia per Individui, Coppie e Famiglie.
+  testo: <p>In un luogo sicuro e accogliente, faremo insieme un viaggio di esplorazione tra emozioni e
+    pensieri, per aumentare la salute mentale e migliorare le relazioni interpersonali più importanti.</p>
+  immagine: img/hero.jpg
+percorsi:
+  titolo: Svolgo percorsi di terapia individuale, di coppia o con gruppi familiari.
+  testo: Ricevo nel mio studio, su appuntamento.
+chi_sono:
+  titolo: Dott.ssa Luisa Bruno, Medico Psicoterapeuta
+  testo: '<p>Mi sono laureata in Medicina e Chirurgia presso l’Università degli Studi di Torino; poi mi
+    sono dedicata alla mia grande passione: la psicoterapia: la cura e l’aiuto per gli altri attraverso
+    il dialogo e la relazione.</p><p>Mi sono quindi specializzata in Psicoterapia Sistemico-Relazionale
+    presso l’Istituto Emmeci, sede torinese del Centro Studi di Terapia Familiare e Relazionale, diretto
+    dal Prof. Luigi Cancrini.</p>'
+  immagine: img/luisa.jpeg
+  bottone: Specializzata in
+aree:
+  titolo: Aree di Competenza
+  testo: <p>Con l’approccio Sistemico-Relazionale si realizza un naturale continuum tra l’intrapsichico
+    di ognuno di noi e le relazioni che intratteniamo con gli altri, fin dalle nostre prime esperienze
+    all’interno dell’ambiente familiare. Il percorso terapeutico quindi sarà sempre volto a integrare
+    pensieri e sentimenti interiori con il benessere delle relazioni attorno a sé.</p>
+  liste:
+  - - Depressione
+    - Disturbi della Personalità
+    - Disturbi dell'Umore
+    - Disturbi Alimentari
+    - Attacchi di Panico
+    - Problemi di Coppia
+    - Disturbi Ossessivi Compulsivi
+    - Depressione Post Partum
+  - - Dipendenze Affettive
+    - Stress e Ansia
+    - Esaurimento Nervoso
+    - Difficoltà relazionali
+    - Gioco d'azzardo patologico
+    - Violenza familiare
+    - Violenza psicologica
+    - Sconforto e Angoscia
+  testimonianze:
+  - nome: Angela C.
+    testo: Ho iniziato il percorso di psicoterapia perché mi trovavo in un momento di grande ansia che
+      si associava anche a disturbi fisici importanti. Le cose sono molto migliorate quando insieme alla
+      dottoressa ho compreso l’origine profonda di queste mie problematiche.
+  - nome: Maddalena F.
+    testo: Con mio marito abbiamo deciso di chiedere aiuto in un momento di crisi nel quale era diventato
+      difficile anche occuparci adeguatamente dei nostri figli. La dottoressa ci ha aiutati a comprenderci
+      meglio a vicenda, lavorando su noi stessi e sulla nostra relazione, ritrovando la serenità di tutta
+      la famiglia.
+  - nome: Lucia V.
+    testo: Con l’aiuto della dottoressa sono riuscita a recuperare la relazione con mia figlia, che si
+      era deteriorata da tempo, imparando a conoscermi meglio, a comprendere l’origine delle mie ansie
+      e preoccupazioni e questo ha migliorato il nostro rapporto.
+cta1:
+  titolo: Ogni viaggio inizia con un passo. Facciamolo insieme.
+  testo: <p>A volte basta una conversazione per accendere una nuova prospettiva. Affrontiamo insieme ansia,
+    stress e difficoltà con ascolto e comprensione. Il primo passo è qui.</p>
+  immagine: img/bicchiere.jpg
+fasi:
+  titolo: Le 3 fasi della psicoterapia
+  fasi:
+  - titolo: Fase 1
+    testo: <p>Solitamente, vi è un primo tempo di psicoterapia dedicato alla sintonizzazione emotiva tra
+      terapeuta e paziente, alla costruzione di un ambiente sicuro e privo di giudizio, in cui sentirsi
+      assolutamente liberi di esprimersi pienamente. Questa prima parte è anche dedicata all’analisi della
+      domanda di terapia, al fine di costruire insieme una traiettoria di lavoro.</p>
+  - titolo: Fase 2
+    testo: <p>Piano piano, e sempre nel rispetto dei tempi del paziente, si esplorano insieme quali possano
+      essere le cause del malessere, per giungere a immaginare nuove modalità di relazione con se stessi
+      e con gli altri, che siano maggiormente funzionali e che portino a un ritrovato benessere individuale,
+      di coppia o familiare.</p>
+  - titolo: Fase 3
+    testo: <p>Procedendo, si vanno a consolidare sempre più i nuovi modelli di funzionamento e di comunicazione,
+      così da avviarsi al momento in cui la terapia si conclude, lasciando il paziente pienamente in possesso
+      della facoltà di decidere come proseguire la propria vita.</p>
+specializzazioni:
+  titolo: Specializzata in
+  voci:
+  - titolo: Problemi di Comunicazione
+    testo: In tutte le relazioni, anche quella con sé stessi, si può avere la sensazione di non ricevere
+      mai le attenzioni che si meriterebbero, con aumento della frustrazione. Scopriamo insieme nuove
+      modalità di relazione più salutari!
+    immagine: img/Anxiety-Disorder.jpg
+  - titolo: Problematiche Familiari
+    testo: A volte la situazione di difficoltà coinvolge tutti i membri del nucleo familiare, con difficoltà
+      di comunicazione, litigi continui, incomprensioni, recriminazioni. In questi casi, un percorso familiare
+      è la scelta ideale per ritrovare il dialogo e lo scambio reciproco.
+    immagine: img/Depression.jpg
+  - titolo: Crisi di Coppia
+    testo: Può capitare di affrontare grandi o piccoli cambiamenti e ritrovarsi smarriti, non riuscendo
+      più a “connettersi” con l’altro come prima. Può essere utile un aiuto per capire come comunicare
+      di nuovo.
+    immagine: img/Relationships.jpg
+  - titolo: Ansia, Disturbi del Sonno
+    testo: L’ansia è una problematica multisfaccettata, che può presentarsi con disturbi legati al proprio
+      corpo e/o ai propri pensieri, che possono diventare anche molto disturbanti nella giornata. Inoltre,
+      le difficoltà legate al sonno possono essere la spia di un disturbo d’ansia non identificato. È
+      possibile comprenderli al meglio, per superarli.
+    immagine: img/Substance-Abuse.jpg
+  - titolo: Sostegno alla Genitorialità
+    testo: I bambini, gli adolescenti. A volte si può avere la sensazione di averle provate tutte e non
+      sapere più cosa fare, tanto da mettere in crisi la coppia stessa. Proviamo a immaginare insieme
+      modi nuovi per relazionarsi con loro e per ritrovare la serenità familiare.
+    immagine: img/Parenthood-Therapy.jpg
+  - titolo: Depressione
+    testo: Profonde sensazione di sconforto e di impotenza possono diventare sgradevoli compagni di vita.
+      Affrontarli insieme, può aiutare a riprendere in mano il proprio progetto esistenziale, con entusiasmo.
+    immagine: img/Grief-Loss.jpg
+faq:
+  titolo: FAQ
+  voci:
+  - domanda: Come funziona la psicoterapia?
+    risposta: <p>Il percorso terapeutico è sempre uno spazio condiviso tra paziente e terapeuta, nel quale
+      si co-costruiscono significati ed esperienze. Non è quindi un percorso a senso unico nel quale il
+      terapeuta, “l’esperto”, deve guidare il paziente. Al contrario, è il paziente “l’esperto” di sé
+      stesso; il terapeuta è un “allenatore” che rimanendo accanto al paziente lo aiuta ad arrivare là
+      dove vuole arrivare, per guadagnare un nuovo benessere e una nuova libertà. Per questo lo scambio,
+      il dialogo costante, empatico, sono fondamentali per costruire insieme nuove possibilità.</p>
+  - domanda: Quanto dura ogni appuntamento e ogni quanto dovremo vederci?
+    risposta: <p>Ogni incontro dura un’ora in totale. Il calendario degli incontri viene condiviso con
+      il paziente, la coppia o la famiglia, tenendo in conto le esigenze di tutti e in base al problema
+      presentato; può essere settimanale o quindicinale.</p>
+  - domanda: Lo psicoterapia può manipolare la mia mente?
+    risposta: <p>Nel lavoro terapeutico non si tratta mai di cambiare il paziente secondo ciò che il terapeuta
+      ritiene più giusto, bensì di rispettare la profonda natura dell’individuo che si ha di fronte, così
+      come di ogni componente della coppia o della famiglia, di accogliere tale natura, curarla, farla
+      crescere, per aiutare a raggiungere piena consapevolezza di sé e dunque a costruire la propria vita
+      sempre più in linea con i propri valori ed aspettative.</p>
+  - domanda: La psicoterapia è per i deboli o per i matti!
+    risposta: <p>Al contrario, bisogna essere molto coraggiosi per intraprendere un percorso di autentica
+      conoscenza di sé, per mettersi in discussione, per provare a capire le ragioni dell’altro pur arrivando
+      da relazioni dove regna la sfiducia, l’incomprensione reciproca, la svalutazione.<br/>La bellezza
+      del percorso psicoterapeutico è quella di aumentare il benessere di ogni persona, migliorando la
+      qualità della propria vita.</p>
+  - domanda: È davvero possibile produrre cambiamenti solo “parlando”?
+    risposta: <p>Lo scambio tra paziente e terapeuta non è mai “solo parlare”; è un dialogo denso di significati
+      nel quale si intrecciano pensieri e relazioni, presente e passato, da cui scaturisce una nuova conoscenza
+      di sé, un riappropriarsi di risorse proprie che neanche si pensava di possedere, una visione nuova
+      anche dei propri problemi e difficoltà, che divengono via via sempre più maneggiabili.</p>
+  - domanda: A che serve? Nessuno può capire il mio dolore e la mia difficoltà
+    risposta: <p>Il terapeuta è tendenzialmente una persona empatica, formata per accogliere al meglio
+      l’unicità di ogni persona e di ogni esperienza di vita, senza giudizio.<br/>Chi usa queste parole
+      di solito non è sfiduciato (solo) verso gli altri, ma verso sé stesso; teme profondamente di non
+      potercela fare, di non avere la forza di affrontare qualsiasi cambiamento che, in quanto tale, spaventa.
+      <br/>L’aiuto terapeutico permette a ogni individuo di entrare in contatto con il proprio sé di diritto,
+      con le proprie risorse e non solo con le difficoltà, così che sarà sempre più il paziente stesso
+      a tracciare la rotta per migliorare la propria vita.</p>
+cta2:
+  titolo: Non sei solo. Inizia oggi il tuo percorso di cambiamento.
+  testo: <p>Le difficoltà possono sembrare montagne, ma non devi scalarle da solo. Con il giusto supporto,
+    ogni passo diventa più leggero. Iniziamo insieme?</p>
+  immagine: img/Depression.jpg
+affrontare:
+  titolo: Come affrontare il tuo problema e venirne fuori
+  testo: <p>“Affrontare” è la parola chiave. Nel momento in cui smetti di evitare, di guardare dall’altra
+    parte, di raccontarti cose non vere sulla tua situazione, stai già prendendo in mano la tua vita.
+    Decidere di rivolgerti a un terapeuta può essere il punto di svolta; insieme possiamo attraversare
+    le difficoltà e riscrivere un nuovo futuro.<br/><br/>Non aspettare, il momento giusto è ora!</p>
+  immagine: img/affrontare.jpg
+blog:
+  titolo: Blog
+contatti:
+  titolo: contatti
+  testo: Il tuo percorso verso il benessere inizia qui. Non esitare a contattarmi per qualsiasi domanda
+    o per fissare un appuntamento. In un ambiente accogliente e riservato, possiamo iniziare a esplorare
+    insieme le tue difficoltà e trovare nuove vie per il tuo benessere emotivo e relazionale.
+  orari: 'Lunedì – Venerdì: 8:00 – 19:00'
+  indirizzo: Via Ivrea 41, 10016 Montalto Dora (TO)
+  mappa: https://maps.app.goo.gl/XH49VKdHnQrEJWBs5
+  mappa_embed: https://maps.google.com/maps?q=Via%20Ivrea%2041%20Montalto%20Dora&t=m&z=17&output=embed&iwloc=near
+  ordine: '23773'
+  piva: IT11913370018
+  cf: BRNLSU85L55E379J

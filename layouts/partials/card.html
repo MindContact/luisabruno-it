@@ -1,0 +1,8 @@
+<article class="card">
+  <a class="card-img" href="{{ .RelPermalink }}" style="background-image:url('{{ .Params.immagine | relURL }}')" aria-hidden="true" tabindex="-1"></a>
+  <div class="card-body">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Summary | plainify | truncate 150 }}</p>
+    <a class="more" href="{{ .RelPermalink }}">Leggi tutto »</a>
+  </div>
+</article>

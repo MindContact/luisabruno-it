@@ -1,0 +1,23 @@
+{{- /* Cookie banner + tracking configuration. Rendered only when at least one ID is set
+       in hugo.toml ([params.tracciamento]). Scripts are loaded by assets/js/consenso.js
+       after consent, and only in production builds. */ -}}
+{{ with site.Params.tracciamento }}{{ if or .ga4 .ads .meta_pixel }}
+<script id="tracciamento" type="application/json">{{ dict "ga4" .ga4 "ads" .ads "ads_conversione" .ads_conversione "meta_pixel" .meta_pixel "attivo" hugo.IsProduction | jsonify | safeJS }}</script>
+<section class="consenso" id="consenso" role="dialog" aria-labelledby="consenso-titolo" hidden>
+  <div class="consenso-inner">
+    <h2 id="consenso-titolo">Gestisci il consenso ai cookie</h2>
+    <p>Questo sito usa cookie di statistica (Google Analytics) e di marketing (Google Ads, Meta) solo se li accetti. Puoi cambiare idea in ogni momento da “Preferenze cookie” in fondo alla pagina. <a href="{{ "/cookie-policy/" | relURL }}">Cookie Policy</a></p>
+    <div class="consenso-preferenze" hidden>
+      <label><input type="checkbox" checked disabled> <span><strong>Necessari</strong>: ricordano solo questa scelta.</span></label>
+      <label><input type="checkbox" name="statistiche"> <span><strong>Statistiche</strong>: Google Analytics, per sapere quante persone visitano il sito.</span></label>
+      <label><input type="checkbox" name="marketing"> <span><strong>Marketing</strong>: Google Ads e Meta, per misurare le campagne.</span></label>
+      <button class="btn btn-small btn-outline" type="button" data-consenso="salva">Salva preferenze</button>
+    </div>
+    <div class="consenso-azioni">
+      <button class="btn btn-small" type="button" data-consenso="accetta">Accetta</button>
+      <button class="btn btn-small" type="button" data-consenso="rifiuta">Rifiuta</button>
+      <button class="btn btn-small btn-outline" type="button" data-consenso="preferenze">Preferenze</button>
+    </div>
+  </div>
+</section>
+{{ end }}{{ end }}

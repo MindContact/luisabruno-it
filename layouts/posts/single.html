@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-head" {{ with .Params.immagine }}style="background-image:url('{{ . | relURL }}')"{{ end }}>
+    <div class="wrap">
+      <p class="crumbs"><a href="{{ "/" | relURL }}">Home</a> › <a href="{{ "/posts/" | relURL }}">Blog</a></p>
+      <h1>{{ .Title }}</h1>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format "2 January 2006" }}</time>
+    </div>
+  </header>
+  <div class="wrap prose">{{ .Content }}</div>
+  <div class="wrap post-cta">
+    <p>Ti riconosci in quello che hai letto? Parliamone.</p>
+    <a class="btn" href="{{ site.Data.landing.prenota.href }}" data-prenota target="_blank" rel="noopener">{{ site.Data.landing.prenota.label }}</a>
+  </div>
+  <nav class="wrap pager">
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+    {{ with .PrevInSection }}<a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+  </nav>
+</article>
+{{ end }}

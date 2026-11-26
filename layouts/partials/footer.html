@@ -1,0 +1,30 @@
+{{ $d := site.Data.landing }}
+<section class="contatti" id="contatti">
+  <div class="wrap contatti-inner">
+    <div class="contatti-card">
+      <h2>{{ $d.contatti.titolo }}</h2>
+      <p>{{ $d.contatti.testo | safeHTML }}</p>
+      <div class="contatti-grid">
+        <div><h3>Chiama Luisa</h3><p><a href="{{ $d.telefono.href | safeURL }}">{{ $d.telefono.label }}</a></p></div>
+        <div><h3>Indirizzo Studio</h3><p><a href="{{ $d.contatti.mappa }}" target="_blank" rel="noopener">Via Ivrea 41<br>Montalto Dora</a></p></div>
+        <div><h3>Orari</h3><p>{{ $d.contatti.orari | replaceRE ": " ":<br>" | safeHTML }}</p></div>
+      </div>
+    </div>
+    <div class="mappa" data-map="{{ $d.contatti.mappa_embed }}">
+      <button class="btn btn-outline" type="button">Mostra la mappa</button>
+      <p class="mappa-nota">La mappa è di Google e si carica solo se la apri. <a href="{{ $d.contatti.mappa }}" target="_blank" rel="noopener">Apri in Google Maps</a>.</p>
+    </div>
+  </div>
+</section>
+<footer class="bottom">
+  <div class="wrap bottom-inner">
+    <a class="bottom-logo" href="{{ "/" | relURL }}"><img src="{{ "img/logo-offwhite.svg" | relURL }}" alt="Luisa Bruno, Medico Psicoterapeuta" width="1627" height="656"></a>
+    <div class="bottom-text">
+      <p><strong>Indirizzo:</strong> {{ $d.contatti.indirizzo }} · <strong>Telefono:</strong> <a href="{{ $d.telefono.href | safeURL }}">{{ $d.telefono.label }}</a><br>
+      <strong>P.IVA:</strong> {{ $d.contatti.piva }} · <strong>C.F.:</strong> {{ $d.contatti.cf }} · <strong>Num. iscrizione all’ordine:</strong> {{ $d.contatti.ordine }}</p>
+      <p class="credits">© {{ now.Year }} Luisa Bruno · Design <a href="https://takemakestudios.com/" target="_blank" rel="noopener">TAKEMAKE Studios</a> · Identità visiva <a href="https://hikimi.it/" target="_blank" rel="noopener">Hikimi</a></p>
+      <p class="legali"><a href="{{ "/privacy-policy/" | relURL }}">Privacy Policy</a> · <a href="{{ "/cookie-policy/" | relURL }}">Cookie Policy</a>{{ with site.Params.tracciamento }}{{ if or .ga4 .ads .meta_pixel }} · <a href="#consenso" data-apri-consenso>Preferenze cookie</a>{{ end }}{{ end }}</p>
+    </div>
+  </div>
+</footer>
+<a class="totop" href="#top" aria-label="Torna in cima">↑</a>

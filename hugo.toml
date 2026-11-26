@@ -1,0 +1,30 @@
+baseURL = "https://luisabruno.it/"
+languageCode = "it-IT"
+defaultContentLanguage = "it"
+title = "Dott.ssa Luisa Bruno | Medico Psicoterapeuta"
+copyright = "Luisa Bruno"
+enableRobotsTXT = true
+summaryLength = 35
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  descrizione = "Luisa Bruno, Medico Psicoterapeuta specializzata in Psicoterapia Sistemico-Relazionale. Psicoterapia per individui, coppie e famiglie a Montalto Dora (TO)."
+
+# Tracking, loaded only after the visitor's consent and only in production builds.
+# Same properties as the previous WordPress site. Empty a value to switch that service off;
+# empty them all and the cookie banner disappears.
+[params.tracciamento]
+  ga4 = "G-W72BS8ZQGQ"                                   # Google Analytics 4
+  ads = "AW-17380717307"                                 # Google Ads
+  ads_conversione = "AW-17380717307/__jeCLGTrKYbEPvl4t9A" # Ads conversion: click on a booking link
+  meta_pixel = "1330715537989056"                        # Meta (Facebook) pixel
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[permalinks]
+  posts = "/:slug/"

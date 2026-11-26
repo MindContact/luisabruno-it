@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="blog-list">
+  <div class="wrap">
+    <h1 class="center">Blog</h1>
+    <p class="center lede">{{ .Description }}</p>
+    <div class="cards">{{ range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}</div>
+  </div>
+</section>
+{{ end }}

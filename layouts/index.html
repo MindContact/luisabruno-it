@@ -1,0 +1,162 @@
+{{ define "main" }}
+{{ $d := site.Data.landing }}
+<span id="top"></span>
+
+<section class="i-hero">
+  <div class="wrap i-hero-grid">
+    <div class="i-hero-text">
+      <p class="eyebrow">{{ $d.hero.sopratitolo }}</p>
+      <h1>{{ $d.hero.titolo }}</h1>
+      <div class="lede">{{ $d.hero.testo | safeHTML }}</div>
+      <div class="azioni">
+        <a class="btn" href="{{ $d.prenota.href }}" data-prenota target="_blank" rel="noopener">{{ $d.prenota.label }}</a>
+        <a class="btn btn-outline" href="{{ $d.telefono.href | safeURL }}">{{ $d.telefono.label }}</a>
+      </div>
+    </div>
+    <div class="i-hero-foto">
+      <img src="{{ $d.hero.immagine | relURL }}" alt="Due mani che si stringono durante un colloquio" width="1200" height="800" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="i-percorsi">
+  <div class="wrap">
+    <h2>{{ $d.percorsi.titolo }}</h2>
+    <p>{{ $d.percorsi.testo }}</p>
+  </div>
+  {{ partial "illu.html" (dict "nome" "sessione" "classe" "draw") }}
+</section>
+
+<section class="i-chi" id="chi-sono">
+  <div class="wrap i-due">
+    <div class="i-foto i-foto-ritratto">
+      <img src="{{ $d.chi_sono.immagine | relURL }}" alt="La dott.ssa Luisa Bruno" loading="lazy" width="800" height="1000">
+    </div>
+    <div>
+      <h2>{{ $d.chi_sono.titolo }}</h2>
+      {{ $d.chi_sono.testo | safeHTML }}
+      <a class="btn btn-outline" href="#specializzazioni">{{ $d.chi_sono.bottone }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="i-aree" id="aree-competenza">
+  <div class="wrap">
+    <div class="i-due i-due-alto">
+      <div>
+        <h2>{{ $d.aree.titolo }}</h2>
+        {{ $d.aree.testo | safeHTML }}
+      </div>
+      <ul class="chips">
+        {{ range $d.aree.liste }}{{ range . }}<li>{{ . }}</li>{{ end }}{{ end }}
+      </ul>
+    </div>
+    <div class="voci">
+      {{ range $d.aree.testimonianze }}
+      <figure class="voce">
+        <blockquote>{{ .testo }}</blockquote>
+        <figcaption>{{ .nome }}</figcaption>
+      </figure>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="i-banda">
+  <div class="wrap">
+    <div class="banda">
+      <div class="banda-text">
+        <h2>{{ $d.cta1.titolo }}</h2>
+        {{ $d.cta1.testo | safeHTML }}
+        <a class="btn btn-light" href="{{ $d.prenota.href }}" data-prenota target="_blank" rel="noopener">{{ $d.prenota.label }}</a>
+      </div>
+      {{ partial "illu.html" (dict "nome" "coppia" "classe" "draw") }}
+    </div>
+  </div>
+</section>
+
+<section class="i-fasi" id="come-lavoro">
+  <div class="wrap">
+    <h2 class="center">{{ $d.fasi.titolo }}</h2>
+    <ol class="passi">
+      {{ range $i, $f := $d.fasi.fasi }}
+      <li>
+        <span class="passo-n" aria-hidden="true">{{ add $i 1 }}</span>
+        <h3>{{ $f.titolo }}</h3>
+        {{ $f.testo | safeHTML }}
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+
+<section class="i-spec" id="specializzazioni">
+  <div class="wrap">
+    <h2 class="center">{{ $d.specializzazioni.titolo }}</h2>
+    <div class="spec-grid">
+      {{ range $d.specializzazioni.voci }}
+      <article class="spec-voce">
+        <img src="{{ .immagine | relURL }}" alt="" loading="lazy" width="800" height="500">
+        <div>
+          <h3>{{ .titolo }}</h3>
+          <p>{{ .testo }}</p>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    <p class="center"><a class="btn" href="{{ $d.prenota.href }}" data-prenota target="_blank" rel="noopener">{{ $d.prenota.label }}</a></p>
+  </div>
+</section>
+
+<section class="i-faq" id="faq">
+  <div class="wrap i-faq-grid">
+    <div class="i-faq-testa">
+      <h2>{{ $d.faq.titolo }}</h2>
+      {{ partial "illu.html" (dict "nome" "linea-1" "classe" "draw") }}
+    </div>
+    <div class="faq-lista">
+      {{ range $d.faq.voci }}
+      <details class="faq-item"><summary>{{ .domanda }}</summary><div class="faq-body">{{ .risposta | safeHTML }}</div></details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="i-banda">
+  <div class="wrap">
+    <div class="banda">
+      <div class="banda-text">
+        <h2>{{ $d.cta2.titolo }}</h2>
+        {{ $d.cta2.testo | safeHTML }}
+        <a class="btn btn-light" href="{{ $d.prenota.href }}" data-prenota target="_blank" rel="noopener">{{ $d.prenota.label }}</a>
+      </div>
+      {{ partial "illu.html" (dict "nome" "famiglia" "classe" "draw") }}
+    </div>
+  </div>
+</section>
+
+<section class="i-affrontare">
+  <div class="wrap i-due">
+    <div>
+      <h2>{{ $d.affrontare.titolo }}</h2>
+      {{ $d.affrontare.testo | safeHTML }}
+      <a class="btn" href="{{ $d.prenota.href }}" data-prenota target="_blank" rel="noopener">{{ $d.prenota.label }}</a>
+    </div>
+    <div class="i-foto">
+      <img src="{{ $d.affrontare.immagine | relURL }}" alt="" loading="lazy" width="1000" height="800">
+    </div>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <div class="wrap">
+    <h2 class="center">{{ $d.blog.titolo }}</h2>
+    <div class="cards">
+      {{ range (where site.RegularPages "Section" "posts").ByDate.Reverse | first 6 }}
+      {{ partial "card.html" . }}
+      {{ end }}
+    </div>
+    <p class="center"><a class="btn btn-outline" href="{{ "/posts/" | relURL }}">Tutti gli articoli</a></p>
+  </div>
+</section>
+{{ end }}
