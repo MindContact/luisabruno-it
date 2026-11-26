@@ -1,6 +1,7 @@
 ---
 title: "Cookie Policy"
 layout: pagina
+aliases: ["/cookie-policy-ue/"]
 description: "Quali cookie usa luisabruno.it, a cosa servono e come dare o revocare il consenso."
 ---
 
